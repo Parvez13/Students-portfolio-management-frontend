@@ -1,16 +1,23 @@
-# React + Vite
+# 🎨 Student Portfolio Management System - Frontend App 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the client-side interface layer of the Student Portfolio Management System. Built using Vite, React, and Tailwind CSS, this app provides a fast, responsive dashboard for students to submit projects and for admins to evaluate student portfolios.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Core Stack & UI Elements
+* **Development Engine:** Vite + React.js ⚡
+* **Style Engine:** Tailwind CSS 🎨
+* **Application Routing:** React Router DOM (v6 Matrix) 🧭
+* **UI Elements:** Reusable Atomic Form Component Fragments 🧱
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🗂️ Workspace Architecture Layout
+```text
+frontend/
+├── src/
+│   ├── components/      # Atomic reusable components (Input, Button)
+│   ├── pages/           # View layouts (Login, Dashboard, Admin Console)
+│   ├── utils/           # Centralized HTTP Client configuration mapping
+│   ├── App.jsx          # Route matrix layout wrapper
+│   └── main.jsx         # App router context engine launcher

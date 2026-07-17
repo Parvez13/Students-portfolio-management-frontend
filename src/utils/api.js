@@ -1,7 +1,7 @@
 // src/utils/api.js
 
 // Points to your active modular Express engine gateway running in the background
-export const API_BASE="https://students-portfolio-management-backend.onrender.com"
+export const API_BASE="https://students-portfolio-management-backend.onrender.com/api/v1"
 // export const API_BASE = "http://localhost:3000/api/v1";
 
 /**

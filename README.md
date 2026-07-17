@@ -1,6 +1,6 @@
 # 🎨 Student Portfolio Management System - Frontend App 🚀
 
-* App Link: https://students-portfolio-management-front.vercel.app/login
+* App Link: https://students-portfolio-management-front.vercel.app
   
 Welcome to the client-side interface layer of the Student Portfolio Management System. Built using Vite, React, and Tailwind CSS, this app provides a fast, responsive dashboard for students to submit projects and for admins to evaluate student portfolios.
 

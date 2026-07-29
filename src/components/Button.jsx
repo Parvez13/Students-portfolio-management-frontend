@@ -17,7 +17,9 @@ function Button({ children, type = 'button', variant = 'primary', disabled = fal
       onClick={onClick}
       className={`${baseStyles} ${variants[variant]}`}
       {...props}
-    />
+    >
+      {children}
+    </button>
   );
 }
 

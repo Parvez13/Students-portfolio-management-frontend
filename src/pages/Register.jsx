@@ -25,10 +25,15 @@ function Register() {
       });
       
       const result = await handleResponse(res);
-      setUiMessage({ type: 'success', text: result.message });
+      setUiMessage({ 
+        type: 'success', 
+        text: result?.message || 'Account created successfully! Redirecting to login...' 
+      });
       
-      // Auto-route to login page after a brief delay for a better user experience
-      setTimeout(() => navigate('/login'), 1200);
+      // Auto-route to login page with replace option after brief delay
+      setTimeout(() => {
+        navigate('/login', { replace: true });
+      }, 1200);
     } catch (error) {
       setUiMessage({ type: 'error', text: error.message });
     } finally {
